@@ -1,1 +1,45 @@
-/* YOUR CSS GOES HERE */
+/* global controls */
+*    { padding: 0; margin: 0; }
+html { box-sizing: border-box; }
+img  { margin-bottom: 2rem; max-width: 100%; display: block; }
+
+/* element controls */
+body {
+  margin: 2.25rem auto;
+  max-width: 40rem;
+  font-size: 18px;
+  color: #111;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+}
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+  margin: 1.5em auto;
+  font-family: Times, serif;
+  line-height: 1.4;
+}
+blockquote {
+  margin: 1.5rem auto;
+  padding: 0.5em 0.5em 1.5em 0.75em;
+  background-color: #ddd;
+}
+ul {
+  margin: 0 1em;
+}
+li { padding: 0 1em; }
+
+hr {
+  margin: 3rem 0;
+  display: block;
+  border-width: 1px;
+}
