@@ -22,7 +22,6 @@ h1 {
 }
 h2 { font-size: 1.75rem; }
 h3 { font-size: 1.25rem; }
-
 p, blockquote { margin: 1.5em auto; }
 p {
   font-family: Times, serif;
@@ -32,17 +31,14 @@ blockquote {
   padding: 0.5em 0.5em 1.5em 0.75em;
   background-color: #ddd;
 }
-
 ul { margin: 0 1em; }
 li { padding: 0 1em; }
 a { color: #0074d9; }
-
 hr {
   margin: 3rem 0;
   display: block;
   border-width: 1px;
 }
-
 iframe {
   display: block;
   height: 320px;
