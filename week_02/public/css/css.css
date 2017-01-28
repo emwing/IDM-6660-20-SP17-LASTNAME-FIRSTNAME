@@ -1,5 +1,6 @@
+/* Teacher's global controls for Mobile First view */
 html {
-    font-size: 18px;
+    font-size: 18px;  /* need to override? */
     line-height: 1rem;
     font-family: sans-serif;
     color: #111;
@@ -32,9 +33,9 @@ body, body * {
 }
 
 body>* {
-    display: block;
-    width: 300px;
-    margin: 0 auto;
+    display: block;  /* need to override? */
+    width: 300px;  /* need to override */
+    margin: 0 auto;  /* need to override? */
 }
 
 .font-scale-up-3 {
@@ -56,9 +57,9 @@ body>* {
 }
 
 header {
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 2rem;  /* need to override */
     padding: 1rem;
-    background-color: #FF851B;
+    background-color: #FF851B;  /* need to override */
 }
 
 header h1 {
@@ -72,13 +73,16 @@ header h2 {
 
 article {
     margin-bottom: 4rem;
+    position: relative;  /*added for future overrides */
 }
 
 img.cover-img {
-    width: 100%;
+    width: 100%;  /* need to override */
     max-width: 100%;
     margin-bottom: 1rem;
 }
+
+article h1, article h2, img.cover-img, article p { position: static; }  /*added for future overrides */
 
 article h2 {
     margin-bottom: 1rem;
@@ -86,10 +90,10 @@ article h2 {
 }
 
 article p span {
-    display: none;
+    display: none;  /* need to override */
 }
 
-article p:after {
+article p:after {  /* need to override */
     content: "Read More...";
     font-size: 1.5em;
     color: #FF851B;
@@ -105,4 +109,34 @@ article p:hover:after {
 
 footer {
     margin-bottom: 3rem;
+}
+
+/* media queries */
+@media screen and (min-width: 480px) {
+    html { font-size: 22px; }
+    body>* { width: 480px; }
+    article p span { display: block; }
+    article p:after { content: none; }
+}
+
+@media screen and (min-width: 720px) {
+    html { font-size: 28px; }
+    body>* { width: 720px; }
+    img.cover-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42%;
+    }
+    article h1, article h2, article p {
+      margin-left: 46%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+}
+
+@media screen and (min-width: 1620px) {
+
 }
