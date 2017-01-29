@@ -135,22 +135,22 @@ footer {
     html { background-color: #FF851B; }
     body>* { width: 1080px; }
     header, footer {
-      float: left;
-      width: 25%;
-      margin: 0 auto 1rem;
+      width: 10.5rem;
+      margin: 0 0 1rem;
     }
     footer { padding: 0 1rem; }
     main {
-      margin-top: 1rem;
-      float: right;
-      width: 70%;
+      position: absolute;
+      top: 1rem;
+      left: 12rem;
+      width: 80%;
       max-width: 1000px;
     }
     article h1, article h2, article p {
       display: none;
     }
     article {
-      margin: 0 1% 2%;
+      margin: 0 0.5rem 1rem;
       position: relative;
       float: left;
       width: 320px;
@@ -159,7 +159,6 @@ footer {
       border: 1px solid blue;
     }
     article img {
-      position: absolute;
       top: 50%;
       left: 50%;
       height: 105%;
