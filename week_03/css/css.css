@@ -39,6 +39,7 @@ html {
   box-sizing: inherit;
 }
 img {
+  margin: 1%;
   max-width: 100%;
   display: block;
 }
@@ -110,7 +111,6 @@ button#register {
 }
 .news-post p { margin-bottom: 0.5em; }
 img.news-img1-2 {
-  margin: 1%;
   display: inline;
   width: 45%;
 }
@@ -118,7 +118,7 @@ time {
   font-size: 0.875rem;
   font-style: italic;
 }
-#featured, button#register, button#load, #news h2, #loadmore, button#load { text-align: center; }
+#featured, button#register, button#load, #news h2, #loadmore, button#load, #social { text-align: center; }
 
 /* laod more button control */
 button#load {
@@ -136,11 +136,14 @@ button#load {
 /* footer controls */
 footer { padding: 1em 1em 2em 1em; }
 footer a { font-size: 0.875em; }
+/* search form control */
 #search { margin: 1em 0; }
 #search input {
   padding: 1em;
   width: 100%;
 }
+/* social media controls */
+#social a { margin: 2%; }
 
 /* add javascript effect on the mobile menu */
 .navopen #topnav { display: block; }
