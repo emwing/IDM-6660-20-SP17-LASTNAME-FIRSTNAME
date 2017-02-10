@@ -1,0 +1,156 @@
+/* global controls */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after { clear: both; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img {
+  margin: 1%;
+  max-width: 100%;
+  display: block;
+}
+
+/* element controls */
+h1, h2, h3, h4, h5, h6 { font-family: 'Muli', Helvetica, sans-serif; }
+
+header, .page-content, #news { position: relative; }
+
+body {
+  max-width: 100%;
+  font: 16px/1.4em Arial, sans-serif;
+  color: #111;
+  background-color: #0076bb;
+}
+
+.page-content { margin: 0 auto; }
+
+header {
+  padding: 1em;
+  border-bottom: 0.5rem solid #fa8f21;
+  background-color: #3aabe0;
+  vertical-align: middle;
+}
+.banner-img { display: inline-block; }  /* put all the logos on one line */
+.logo { max-width: 75%; }
+.retro, .theme { display: none; }  /* retro, a-kun, and b-kun appearance */
+
+/* navigation controls */
+.mainnav { text-align: center; }
+.mainnav ul { list-style-type: none; }
+.mainnav li a, .mainnav li a:visited, .iconnav, footer a { color: #fff; }
+.mainnav li a, .mainnav li a:visited {
+  font-size: 1.25em;
+  text-decoration: none;
+}
+.mainnav li a:active, footer a:active { text-decoration: underline; }
+.iconnav {
+  display: block;
+  position: absolute;
+  top: 5.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+#topnav { display: none; }  /* hide the drop-down menu until clicked */
+
+/* main section controls */
+#featured { margin: 1em auto; }
+button#register {
+  padding: 0.75em 0.5em;
+  max-width: 75%;
+  background-color: #3aabe0;
+  border: 0.125rem solid #fff;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.125rem 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+#news {
+  padding: 5% 2% 2% 2%;
+  background: #fff;
+}
+#news h2 { text-transform: uppercase; }
+.news-post {
+  padding: 1em 0;
+  margin: 0 auto 1em;
+  border-bottom: 1px solid #000;
+}
+.news-post p { margin-bottom: 0.5em; }
+img.news-img1-2 {
+  display: inline;
+  width: 45%;
+}
+time {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+#featured, button#register, button#load, #news h2, #loadmore, button#load, #social { text-align: center; }
+
+/* laod more button control */
+button#load {
+  padding: 0.5em;
+  width: 50%;
+  background-color: #fa8f21;
+  border: 0.125rem solid #ffbb75;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 0.875em;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+/* footer controls */
+footer { padding: 1em 1em 2em 1em; }
+footer a { font-size: 0.875em; }
+/* search form control */
+#search { margin: 1em 0; }
+#search input {
+  padding: 1em;
+  width: 100%;
+}
+/* social media controls */
+#social a { margin: 2%; }
+
+/* add javascript effect on the mobile menu */
+.navopen #topnav { display: block; }
+.navopen nav#topnav ul li {
+  padding: 0.75em 1.25em;
+  display: block;
+  width: 100%;
+  background: #fa8f21;
+  border-bottom: 1px solid #fff;
+}

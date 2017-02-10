@@ -1,0 +1,25 @@
+Kristi's suggestions:
+1.  add something to help with the "endless scrolling"
+----unfortunately something fancy to help with this is beyond the scope of my current coding skills; will instead offer a fixed side navigation to return to top----
+2.  add hover effect on main navigation for desktop views
+----agree; if site were viewed on destkop, hover option is helpful----
+3.  utilize <main> instead of <div> for page-wrap
+----chose to not implement as the use of <div> in this context is more appropriate for formatting and containing the news posts and footer----
+4.  try to keep search button on same line as search field
+----agree; would be more aesthetically pleasing----
+
+Sandra's suggestion:
+1.  add some kind of branding/design elements to help identify site as Anime Boston
+----agree; would help identify site and make a little more interesting----
+
+Brigit's suggestions:
+1.  add some kind of branding/design elements to help identify site as Anime Boston
+----repeated request, agree----
+2.  increase padding of article text
+----agree; would help to relieve tension between viewport edge and text----
+
+Laura's suggestions:
+1.  increase line height on text elements
+----agree; will do anything to help improve legibility----
+2.  find a way to better distinguish <h3> elements
+----agree; will help improve visual hierarchy----
