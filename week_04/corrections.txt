@@ -7,6 +7,8 @@ Kristi's suggestions:
 ----chose to not implement as the use of <div> in this context is more appropriate for formatting and containing the news posts and footer----
 4.  try to keep search button on same line as search field
 ----agree; would be more aesthetically pleasing----
+5.  move menu icon to top right of viewport
+----chose to not implement as its alignment is based on its relation to the convention's logo, aiming for an aesthetically pleasing appearance----
 
 Sandra's suggestion:
 1.  add some kind of branding/design elements to help identify site as Anime Boston
