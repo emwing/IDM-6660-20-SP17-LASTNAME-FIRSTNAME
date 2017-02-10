@@ -6,7 +6,7 @@ Kristi's suggestions:
 3.  utilize <main> instead of <div> for page-wrap
 ----chose to not implement as the use of <div> in this context is more appropriate for formatting and containing the news posts and footer----
 4.  try to keep search button on same line as search field
-----agree; would be more aesthetically pleasing----
+----chose to not implement as fastnav takes up too much space----
 5.  move menu icon to top right of viewport
 ----chose to not implement as its alignment is based on its relation to the convention's logo, aiming for an aesthetically pleasing appearance----
 

@@ -76,6 +76,7 @@ header {
   font-size: 1.25em;
   text-decoration: none;
 }
+.navopen nav#topnav ul li:hover, .navopen nav#topnav ul li a:hover { background-color: #ffbb75; }  /* added per peer suggestion */
 .mainnav li a:active, footer a:active { text-decoration: underline; }
 .iconnav {
   display: block;
@@ -85,6 +86,32 @@ header {
   cursor: pointer;
 }
 #topnav { display: none; }  /* hide the drop-down menu until clicked */
+
+/* fastnav controls - added per peer suggestion */
+#fastnav {
+  position: fixed;
+  right: 0;
+  bottom: 12%;
+  z-index: 10;
+  background-color: #fa8f21;
+  border: 0.125rem solid #ffbb75;
+  text-align: center;
+}
+#fastnav .fastnav-img {
+  margin: 0 auto;
+  width: 2.5rem;
+}
+#fastnav ul { list-style: none; }
+#fastnav li, #fastnav li a, #fastnav-img { display: block; }
+#fastnav ul, #fastnav li a {
+  padding: 0.125em 0.5em;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+  text-decoration: none;
+}
+#fastnav li a:active, #fastnav li a:hover { background-color: #ffbb75; }
 
 /* main section controls */
 #featured { margin: 1em auto; }
@@ -99,8 +126,9 @@ button#register {
   text-transform: uppercase;
   color: #fff;
 }
+#featured a button:hover { text-decoration: underline; }  /* added per peer suggestion */
 #news {
-  padding: 5% 2% 2% 2%;
+  padding: 5% 5% 2% 5%;  /* increased side padding per peer suggestion */
   background: #fff;
 }
 #news h2 { text-transform: uppercase; }
@@ -138,12 +166,13 @@ button#load {
   font-variant: small-caps;
   color: #fff;
 }
+#loadmore button:hover { text-decoration: underline; }  /* added per peer suggestion */
 
 /* footer controls */
-footer { padding: 1em 1em 2em 1em; }
+footer { padding: 0 1em 2em 1em; }
 footer a { font-size: 0.875em; }
 /* search form control */
-#search { margin: 1em 0; }
+#search { margin: 3em 0; }
 #search input {
   padding: 1em;
   width: 100%;
