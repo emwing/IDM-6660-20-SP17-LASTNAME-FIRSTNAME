@@ -25,3 +25,13 @@ Laura's suggestions:
 ----agree; will do anything to help improve legibility----
 2.  find a way to better distinguish <h3> elements
 ----agree; will help improve visual hierarchy----
+
+Robert's suggestions:
+1.  alter color palette to something warmer
+----agree, chose brighter colors than those from the original site, but kept to the main palette as they are used for the mascots----
+2.  alter "Load More News" to "Previous News" to allow for reloading past pages of news
+----agree, edited for future ability----
+3.  alter "Load More News" button to match "Register" button
+----agree, formatted to match----
+4.  add some kind of branding/design elements to help identify site as Anime Boston
+----repeated request, agree; added more images to news articles that could have photos, utilized site logo for articles that did not----
