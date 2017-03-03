@@ -1,0 +1,138 @@
+/* General global controls */
+  * { padding: 0; margin: 0; }
+  html { box-sizing: border-box;}
+  *, *:before, *::after { box-sizing: inherit; }
+  body { font: 14px 'Roboto', Helvetica, sans-serif; }
+  img, svg, .page-section { max-width: 100%; display: block; }
+
+  h1 { font-family: 'Gabriela', cursive; }
+  h2, h3, h4, h5, h6 { font-family: 'Quicksand', Arial, sans-serif; }
+  h3, p {
+   margin: 1rem 0 0 0;
+   line-height: 1.4em;
+  }
+
+/* general header controls */
+  header {
+    position: relative;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+/* homepage header controls */
+  .heroimg {
+    padding: 0.5em 0.5em 0 0.5em;
+    background: url("../img/gray-bgonly.png") repeat-x;
+    background-position: bottom;
+    background-size: auto 75%;
+    }
+
+  .heroimg img {
+    float: right;
+    max-width: 55%;
+  }
+
+  .heroimg h1 { font-size: 1.625rem; }
+  .heroimg h2 { font-size: 1.375rem; }
+  .test {
+    position: absolute;
+    top: 67.5%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+
+
+/* general navigation controls */
+   nav {
+     font: 300 1.15em 'Quicksand', Arial, sans-serif;
+     letter-spacing: 0.1em;
+   }
+
+/* navigation controls */
+   #mainnav { /* horizontal and position navbar */
+     display: inline-block;
+     width: 100%;
+   }
+   #mainnav ul { /* navbar appearance */
+     background: #000;
+     list-style: none;
+     text-align: center;
+   }
+   #mainnav li { display: inline-block; }
+   #mainnav li a {
+     display: block;
+     padding: 0.75em 0.5em;
+     color: #fff;
+     text-shadow: 0 0 0.1em #fff;
+   }
+   #mainnav li:not(.iconnav) { display: none; } /* mobile menu conotrol */
+   #mainnav li a:hover, #mainnav li a:active, .social a:hover, .social a:active {
+     color: #03E6FB;
+     text-shadow: 0 0 0.5em #03E6FB;
+     -webkit-animation: glow 0.35s ease-in;
+     -moz-animation: glow 0.35s ease-in;
+     animation: glow 0.35s ease-in;
+   }
+     @-webkit-keyframes glow {
+       from {
+         color: #fff;
+         text-shadow: 0 0 0.25em #fff;
+       }
+       to {
+         color: #03E5FB;
+         text-shadow: 0 0 0.5em #03E6FB;
+       }
+     }
+     @-moz-keyframes glow {
+       from {
+         color: #fff;
+         text-shadow: 0 0 0.25em #fff;
+       }
+       to {
+         color: #03E5FB;
+         text-shadow: 0 0 0.5em #03E6FB;
+       }
+     }
+     @-keyframes glow {
+       from {
+         color: #fff;
+         text-shadow: 0 0 0.25em #fff;
+       }
+       to {
+         color: #03E5FB;
+         text-shadow: 0 0 0.5em #03E6FB;
+       }
+     }
+   #mainnav li a, #mainnav li a:hover { text-decoration: none; }
+   #mainnav .currentpage {
+     color: #ddd;
+     text-shadow: none;
+   }
+
+/* add the javascript effect on the mobile menu */
+   .navopen #mainnav { display: block; }
+   .navopen #mainnav ul li {
+     display: block;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.75);
+   }
+
+.page-section {
+  padding: 1em;
+}
+#logowing {
+  float: left;
+  width: 25%;
+  padding-right: 0.5em;
+}
+
+footer {
+  padding-top: 1em;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+.social a {
+  padding: 1em;
+  color: #fff;
+}

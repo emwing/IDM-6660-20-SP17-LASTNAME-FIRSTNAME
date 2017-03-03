@@ -1,0 +1,177 @@
+/* General global controls */
+  * { padding: 0; margin: 0; }
+  html { box-sizing: border-box;}
+  *, *:before, *::after { box-sizing: inherit; }
+  body { font: 16px/1.4 'Roboto', Helvetica, sans-serif; }
+  img, svg, .page-section { max-width: 100%; display: block; }
+
+  h1 { font-family: 'Gabriela', cursive; }
+  h2, h3, h4, h5, h6 { font-family: 'Quicksand', Arial, sans-serif; }
+  h3, p {
+    margin: 1rem 0 0 0;
+    line-height: 1.4em;
+  }
+
+/* general page element controls */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-section {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 64rem;
+    position: relative;
+  }
+
+/* visual controls for the homepage hero header */
+  .flex-container_hero {
+    padding: 0.5em 0.5em 0 0.5em;
+    background: url("../img/gray-bgonly.png") repeat-x;
+    background-position: bottom;
+    background-size: auto 63%;
+    text-align: center;
+    /* flex controls for mobile & tablet */
+    display: flex;
+    max-height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+/* visual controls for homepage header h1 & h2s */
+  .flex-items_hero { flex: 2; }
+  .flex-items_hero h1 {  /* mobile and tablet size */
+    font-size: 1.5625rem;
+    letter-spacing: 0.0625rem;
+  }
+  .flex-items_hero h2 {  /* mobile and tablet size */
+    font-size: 1.25rem;
+    font-variant: small-caps;
+  }
+/* visual controls for homepage header heroimg; doesn't work for mobile!! */
+  .flex-items_heroimg {
+    align-self: flex-end;
+    flex: 1 1 2rem;
+    margin: 0 auto;
+  }
+
+
+/* general navigation controls */
+  nav {
+    background-color: #000;
+    font: 300 1.15em 'Quicksand', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  nav a {
+    display: inline-block;
+    padding: 0.75em 0.5em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 0.1em #fff;
+  }
+
+  /* interactive stuff */
+  #mainnav a:hover, #mainnav a:active, #mainnav li a:hover, #mainnav li a:active, .social a:hover, .social a:active {
+    color: #03E6FB;
+    text-shadow: 0 0 0.5em #03E6FB;
+    -webkit-animation: glow 0.25s ease-in;
+    -moz-animation: glow 0.25s ease-in;
+    animation: glow 0.25s ease-in;
+  }
+    @-webkit-keyframes glow {
+      from {
+        color: #fff;
+        text-shadow: 0 0 0.25em #fff;
+      }
+      to {
+        color: #03E5FB;
+        text-shadow: 0 0 0.5em #03E6FB;
+      }
+    }
+    @-moz-keyframes glow {
+      from {
+        color: #fff;
+        text-shadow: 0 0 0.25em #fff;
+      }
+      to {
+        color: #03E5FB;
+        text-shadow: 0 0 0.5em #03E6FB;
+      }
+    }
+    @-keyframes glow {
+      from {
+        color: #fff;
+        text-shadow: 0 0 0.25em #fff;
+      }
+      to {
+        color: #03E5FB;
+        text-shadow: 0 0 0.5em #03E6FB;
+      }
+    }
+  #mainnav li a, #mainnav li a:hover { text-decoration: none; }
+  #mainnav .currentpage {
+    color: #ffffe2;
+    text-shadow: none;
+  }
+/* mobile navigation controls */
+  .iconnav { display: block; }  /* mobile menu icon */
+  .mainmenu ul {
+    list-style: none;
+    display: none;  /* would be flex container when javascript .open */
+    flex-wrap: wrap;
+  }
+  .mainmenu li { flex: 1 1 100%; }
+/* javascript controls */
+  .navopen #mainnav ul { display: flex; }
+
+
+/* --------------------------------  MEDIA QUERIES  -------------------------------- */
+
+@media only screen and (min-width: 769px) {  /* for tablet controls */
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero h1 { font-size: 2.5rem; }
+    .flex-items_hero h2 { font-size: 1.75rem; }
+}
+
+
+@media only screen and (min-width: 1025px) {  /* desktop controls */
+  /* visual controls for the homepage hero header */
+    .flex-container_hero {
+      display: block;  /* counter flex */
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero {
+      flex: none;  /* counter flex */
+      position: absolute;
+      top: 67.5%;
+      left: 20%;
+      transform: translateY(-50%);
+    }
+    .flex-items_hero h1 { font-size: 3rem; }
+    .flex-items_hero h2 { font-size: 2rem; }
+
+  /* visual controls for homepage header heroimg; image height overflows container! */
+    .flex-items_heroimg {
+      display: block;
+      flex: none;
+      float: left;
+      margin-left: 60%;
+      max-width: 25%;
+    }
+
+  /* visual controls for the navigation */
+    .iconnav { display: none; }  /* mobile first! */
+    .mainmenu ul {
+      display: flex;
+      flex-wrap: none;
+      justify-content: center;
+    }
+    .mainmenu li {  /* mobile first! */
+      flex: none;
+      max-width: 15rem;
+      margin: 0 1rem;
+    }
+}
