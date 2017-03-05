@@ -4,6 +4,8 @@
   *, *:before, *::after { box-sizing: inherit; }
   body { font: 16px/1.4 'Roboto', Helvetica, sans-serif; }
   img, svg, .page-section { max-width: 100%; display: block; }
+  .clearfix:before, .clearfix:after { content: " "; display: table; }
+  .clearfix:after { clear: both; }
 
   h1 { font-family: 'Gabriela', cursive; }
   h2, h3, h4, h5, h6 { font-family: 'Quicksand', Arial, sans-serif; }
@@ -62,7 +64,7 @@
     letter-spacing: 0.1em;
     text-align: center;
   }
-  nav a {
+  nav a, .social a {
     display: inline-block;
     padding: 0.75em 0.5em;
     color: #fff;
@@ -71,9 +73,9 @@
   }
 
   /* interactive stuff */
-  #mainnav a:hover, #mainnav a:active, #mainnav li a:hover, #mainnav li a:active, .social a:hover, .social a:active {
+  #mainnav a:hover, #mainnav a:active, #mainnav li a:hover, #mainnav li a:active, .social a:hover, .social a:active, .link-thumb:hover, .link-thumb:active {
     color: #03E6FB;
-    text-shadow: 0 0 0.5em #03E6FB;
+    text-shadow: 0 0 0.375em #03E6FB;
     -webkit-animation: glow 0.25s ease-in;
     -moz-animation: glow 0.25s ease-in;
     animation: glow 0.25s ease-in;
@@ -85,7 +87,7 @@
       }
       to {
         color: #03E5FB;
-        text-shadow: 0 0 0.5em #03E6FB;
+        text-shadow: 0 0 0.375em #03E6FB;
       }
     }
     @-moz-keyframes glow {
@@ -95,7 +97,7 @@
       }
       to {
         color: #03E5FB;
-        text-shadow: 0 0 0.5em #03E6FB;
+        text-shadow: 0 0 0.375em #03E6FB;
       }
     }
     @-keyframes glow {
@@ -105,7 +107,7 @@
       }
       to {
         color: #03E5FB;
-        text-shadow: 0 0 0.5em #03E6FB;
+        text-shadow: 0 0 0.375em #03E6FB;
       }
     }
   #mainnav li a, #mainnav li a:hover { text-decoration: none; }
@@ -124,17 +126,67 @@
 /* javascript controls */
   .navopen #mainnav ul { display: flex; }
 
+/* section controls */
+  .info {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info svg, .info img {
+    max-width: 25%;
+    padding-right: 1em;
+    flex: 1;
+    align-self: flex-start;
+  }
+  .info .content { flex: 2; }
+
+  .page-links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* mobile first */
+    align-items: center;
+    justify-content: center;
+  }
+  .link-thumb {
+    border: 0.125rem solid #fff;
+    flex: 1 1 100%;
+    position: relative;
+    max-width: 100%;  /* mobile first */
+    text-align: center;
+    color: #fff;
+    filter: grayscale(100%);
+  }
+  .link-thumb img {
+    position: relative;
+    z-index: -1;
+  }
+  .link-thumb:hover { filter: grayscale(0); }
+  .link-thumb h3 {
+    padding: 1em;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-bottom: 0.125rem solid #fff;
+    -webkit-border-radius: 0 0 0.5rem 0.5rem;
+    -moz-border-radius: 0 0 0.5rem 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+/* visual controls for footer */
+  footer {
+    padding-top: 1em;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+
 
 /* --------------------------------  MEDIA QUERIES  -------------------------------- */
 
-@media only screen and (min-width: 769px) {  /* for tablet controls */
-  /* visual controls for homepage header h1 & h2s */
-    .flex-items_hero h1 { font-size: 2.5rem; }
-    .flex-items_hero h2 { font-size: 1.75rem; }
-}
-
-
-@media only screen and (min-width: 1025px) {  /* desktop controls */
+@media only screen and (min-width: 768px) {  /* for tablet controls */
   /* visual controls for the homepage hero header */
     .flex-container_hero {
       display: block;  /* counter flex */
@@ -146,12 +198,43 @@
     .flex-items_hero {
       flex: none;  /* counter flex */
       position: absolute;
-      top: 67.5%;
-      left: 20%;
+      top: 50%;
+      left: 10%;
       transform: translateY(-50%);
+      /* word balloon controls */
+      padding: 3rem 3.75rem;
+      border: 0.125rem solid #000;
+      background: #fff;
+      /* css3 */
+      -webkit-border-radius: 7.5rem;
+      -moz-border-radius: 7.5rem;
+      border-radius: 7.5rem;
     }
-    .flex-items_hero h1 { font-size: 3rem; }
-    .flex-items_hero h2 { font-size: 2rem; }
+    .flex-items_hero:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -1.875rem;
+      border-width: 1rem 0 1rem 1.875rem;
+      border-color: transparent #000;
+      border-style: solid;
+      display: block;
+      width: 0;
+    }
+    /* creates the smaller  triangle */
+    .flex-items_hero:after {
+      content: "";
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      right:-1.625rem;
+      border-width: 0.875rem 0 0.875rem 1.625rem;
+      border-color: transparent #fff;
+      border-style: solid;
+      display: block;
+      width: 0;
+    }
 
   /* visual controls for homepage header heroimg; image height overflows container! */
     .flex-items_heroimg {
@@ -162,16 +245,55 @@
       max-width: 25%;
     }
 
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero h1 { font-size: 2.25rem; }
+    .flex-items_hero h2 { font-size: 1.5rem; }
+
+    .info .content { align-self: flex-end; }
+
+    .page-links {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+    .page-links h2 { flex-basis: 100%; }
+    article.link-thumb { display: inline-block; }
+    .link-thumb img { max-width: 22rem; }
+}
+
+
+@media only screen and (min-width: 1024px) {  /* desktop controls */
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero {
+      left: 15%;
+      /* word balloon controls */
+      padding: 4rem 4.75rem;
+      border: 0.125rem solid #000;
+      background: #fff;
+      /* css3 */
+      -webkit-border-radius: 10rem;
+      -moz-border-radius: 10rem;
+      border-radius: 10rem;
+    }
+    .flex-items_hero h1 { font-size: 2.75rem; }
+    .flex-items_hero h2 { font-size: 2rem; }
+
+
   /* visual controls for the navigation */
-    .iconnav { display: none; }  /* mobile first! */
+    .iconnav { display: none; }
     .mainmenu ul {
       display: flex;
       flex-wrap: none;
       justify-content: center;
     }
-    .mainmenu li {  /* mobile first! */
+    .mainmenu li {
       flex: none;
       max-width: 15rem;
       margin: 0 1rem;
     }
+
+  /* visual controls for sections */
+    .page-links { max-width: 100%; }
+    .link-thumb img { max-width: 100%; }
 }
