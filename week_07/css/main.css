@@ -51,7 +51,13 @@
             align-items: center;
   }
 /* visual controls for homepage header h1 & h2s */
-  .flex-items_hero { -webkit-box-flex: 2; -ms-flex: 2; flex: 2; }
+  .flex-items_hero {
+    -webkit-box-flex: 2;
+            -ms-flex: 2;
+                flex: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em 0;
+  }
   .flex-items_hero h1 {  /* mobile and tablet size */
     font-size: 1.5625rem;
     letter-spacing: 0.0625rem;
@@ -69,7 +75,6 @@
             flex: 1 1 2rem;
     margin: 0 auto;
   }
-
 
 /* general navigation controls */
   nav {
@@ -138,6 +143,8 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    border-bottom: 1px dotted #d3d3d3;
+    margin-bottom: 1em;
   }
   .info svg, .info img {
     max-width: 25%;
