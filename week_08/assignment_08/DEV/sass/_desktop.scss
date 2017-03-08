@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1024px) {  /* desktop controls */
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero {
+      left: 15%;
+      /* word balloon controls */
+      padding: 4rem 4.75rem;
+      border: 0.125rem solid #000;
+      background: #fff;
+      /* css3 */
+      border-radius: 10rem;
+    }
+    .flex-items_hero h1 { font-size: 2.75rem; }
+    .flex-items_hero h2 { font-size: 2rem; }
+
+
+  /* visual controls for the navigation */
+    .iconnav { display: none; }
+    .mainmenu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .mainmenu li {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      max-width: 15rem;
+      margin: 0 1rem;
+    }
+
+  /* visual controls for sections */
+    .page-links { max-width: 100%; }
+    .link-thumb img { max-width: 100%; }
+}

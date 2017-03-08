@@ -1,0 +1,87 @@
+@media only screen and (min-width: 768px) {  /* for tablet controls */
+  /* visual controls for the homepage hero header */
+    .flex-container_hero {
+      display: block;  /* counter flex */
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;  /* counter flex */
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      /* word balloon controls */
+      padding: 3rem 3.75rem;
+      border: 0.125rem solid #000;
+      background: #fff;
+      /* css3 */
+      border-radius: 7.5rem;
+    }
+    .flex-items_hero:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right: -1.875rem;
+      border-width: 1rem 0 1rem 1.875rem;
+      border-color: transparent #000;
+      border-style: solid;
+      display: block;
+      width: 0;
+    }
+    /* creates the smaller  triangle */
+    .flex-items_hero:after {
+      content: "";
+      position: absolute;
+      top:50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right:-1.625rem;
+      border-width: 0.875rem 0 0.875rem 1.625rem;
+      border-color: transparent #fff;
+      border-style: solid;
+      display: block;
+      width: 0;
+    }
+
+  /* visual controls for homepage header heroimg; image height overflows container! */
+    .flex-items_heroimg {
+      display: block;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      float: left;
+      margin-left: 60%;
+      max-width: 25%;
+    }
+
+  /* visual controls for homepage header h1 & h2s */
+    .flex-items_hero h1 { font-size: 2.25rem; }
+    .flex-items_hero h2 { font-size: 1.5rem; }
+
+    .info .content { -ms-flex-item-align: end; align-self: flex-end; }
+
+    .page-links {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+    .page-links h2 { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+    article.link-thumb { display: inline-block; }
+    .link-thumb img { max-width: 22rem; }
+}
