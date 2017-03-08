@@ -1,0 +1,30 @@
+/* General global controls */
+  * { padding: 0; margin: 0; }
+  html { box-sizing: border-box;}
+  *, *:before, *::after { box-sizing: inherit; }
+  img, { max-width: 100%; display: block; }
+
+  body {
+    padding: 2em;
+    max-width: 95%;
+    background: #111;
+    font: 16px/1.4 'Helvetica', Arial, sans-serif;
+    color: #eee;
+    text-align: center;
+  }
+
+  h1, h2 { color: #ffffe2; }
+
+  ul {
+    text-align: left;
+    list-style-type: circle;
+  }
+
+  a {
+    color: #03E6FB;
+    text-decoration: none;
+  }
+
+  a:hover, a:active { text-decoration: underline; }
+
+  ul, footer { margin-top: 1em; }

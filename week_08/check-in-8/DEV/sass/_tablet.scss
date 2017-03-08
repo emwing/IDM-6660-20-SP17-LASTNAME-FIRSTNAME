@@ -1,0 +1,26 @@
+/* tablet controls */
+  @media only screen and (min-width: 768px) {
+    body {
+      padding: 0 2em;
+      background: #00a4b3;
+    }
+
+    section, footer {
+      margin: 0 auto;
+      max-width: 75%;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-left: 2px solid #ffffe2;
+      border-right: 2px solid #ffffe2;
+    }
+    section {
+      height: 90vh;
+      padding: 4em;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.4375rem; }
+
+    ul { margin: 40% 8% 0 8%; }
+
+    footer { height: 10vh; }
+  }
