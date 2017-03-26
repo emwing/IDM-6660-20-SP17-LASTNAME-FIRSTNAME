@@ -2,6 +2,8 @@
   html {
     font-size: 18px;
     background: #0e0953;
+    background: -webkit-linear-gradient(#0e0953, #2c2588);
+    background: -moz-linear-gradient(#0e0953, #2c2588);
     background: linear-gradient(#0e0953, #2c2588);
   }
 
@@ -17,6 +19,8 @@
     height: 19rem;
     float: left;
     background-color: #d8d5ff;
+    -webkit-border-radius: 9.5rem;
+    -moz-border-radius: 9.5rem;
     border-radius: 9.5rem;
     border-bottom-color: #aca5ff;
     border-right: 0.5rem solid #aca5ff;
