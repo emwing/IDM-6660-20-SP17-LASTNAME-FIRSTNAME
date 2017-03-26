@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+    background: #0e0953;
+    background: linear-gradient(#0e0953, #2c2588);
+  }
+
+  .wrap {
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  header {
+    margin: 2%;
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    float: left;
+    background-color: #d8d5ff;
+    border-radius: 9.5rem;
+    border-bottom-color: #aca5ff;
+    border-right: 0.5rem solid #aca5ff;
+    color: #2c2588;
+  }
+
+  .hs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  section {
+    padding: 0 2rem;
+    margin-top: 14rem;
+    max-width: 50rem;
+    color: #d8d5ff;
+  }
+
+  footer {
+    clear: both;
+    background-color: #0e0953;
+  }
+}

@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+html {
+  line-height: 1.5; }
+
+section {
+  margin: 1rem; }
+
+p {
+  margin: 0.5rem 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+a:hover,
+a:active {
+  text-decoration: underline; }
+
+html {
+  font-size: 14px; }
+
+header, footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #2c2588;
+  color: #aba5ff; }
+
+header {
+  border-bottom: 0.375rem solid #5850bd; }
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1; }
+
+h2 {
+  font-size: 1.25rem;
+  font-style: italic; }
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+  font-family: 'Averia Sans Libre', cursive;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.125rem; }
+
+h1, h3 {
+  letter-spacing: 0.1rem; }
+
+h3, section {
+  font-family: 'Source Serif Pro', Times, serif; }
+
+section {
+  text-align: justify; }
+
+footer {
+  border-top: 0.375rem solid #5850bd;
+  font: 0.875rem 'Source Sans Pro', Arial, sans-serif; }
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px; }
+
+  section {
+    text-align: left; } }
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+    background: #0e0953;
+    background: linear-gradient(#0e0953, #2c2588); }
+
+  .wrap {
+    margin: 0 auto;
+    overflow: auto; }
+
+  header {
+    margin: 2%;
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    float: left;
+    background-color: #d8d5ff;
+    border-radius: 9.5rem;
+    border-bottom-color: #aca5ff;
+    border-right: 0.5rem solid #aca5ff;
+    color: #2c2588; }
+
+  .hs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  section {
+    padding: 0 2rem;
+    margin-top: 14rem;
+    max-width: 50rem;
+    color: #d8d5ff; }
+
+  footer {
+    clear: both;
+    background-color: #0e0953; } }
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    max-width: 70rem; }
+
+  header {
+    float: none; }
+
+  section {
+    margin: -9.5rem auto 0;
+    max-width: 50rem;
+    padding: 0 0 0 18rem; } }
+
+/*# sourceMappingURL=css.css.map */
