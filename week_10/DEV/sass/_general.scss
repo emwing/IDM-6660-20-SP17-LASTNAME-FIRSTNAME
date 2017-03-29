@@ -16,18 +16,25 @@ html { box-sizing: border-box; }
 }
 .clearfix:after { clear: both; }
 
-body { font: 16px/1.4 'Pontano Sans', Arial, sans-serif; }
-h1, nav { font-family: 'Stint Ultra Expanded', 'Courier New', monospace; }
-p { margin: 1rem 0; }
+body  { font-family: 'Pontano Sans', Arial, sans-serif; }
+
+h1,
+nav   { font-family: 'Stint Ultra Expanded', 'Courier New', monospace; }
 
 img { max-width: 100%; }
 
-ul { list-style: none; }
-li a { text-decoration: none; }
-label, li a { text-transform: uppercase; }
+p { margin: 1rem 0; }
+p:last-child { margin: 0; }
+
+ul    { list-style: none; }
+li a  { text-decoration: none; }
+li a,
+label { text-transform: uppercase; }
 
 .toggle_nav {
-  .menu_cntrl {
+  position: relative;
+
+  .menu_cntrl {  /* hides the checkbox */
     display: none;
     visibility: hidden;
   }
