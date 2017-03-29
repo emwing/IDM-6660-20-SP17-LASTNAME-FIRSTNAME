@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after { clear: both; }
+
+body { font: 16px/1.4 'Pontano Sans', Arial, sans-serif; }
+h1, nav { font-family: 'Stint Ultra Expanded', 'Courier New', monospace; }
+p { margin: 1rem 0; }
+
+img { max-width: 100%; }
+
+ul { list-style: none; }
+li a { text-decoration: none; }
+label, li a { text-transform: uppercase; }
+
+.toggle_nav {
+  .menu_cntrl {
+    display: none;
+    visibility: hidden;
+  }
+}
