@@ -1,0 +1,9 @@
+.toggle_nav {
+  .menu_cntrl ~ ul {
+  transition: right .5s ease;
+  }
+
+  .menu_cntrl:checked ~ ul {
+    right: 0;
+  }
+}

@@ -28,8 +28,12 @@ p:last-child { margin: 0; }
 
 ul    { list-style: none; }
 li a  { text-decoration: none; }
+li a:hover  { border-bottom: 1px solid #fff; }
 li a,
-label { text-transform: uppercase; }
+label {
+  color: #fff;
+  text-transform: uppercase;
+}
 
 .toggle_nav {
   position: relative;
